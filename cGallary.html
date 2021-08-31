@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Class Task-2 Gallary Page</title> 
+	 <meta chartset="UFT-8">
+	 <link rel="stylesheet" type="text/css" href="cGallary.css">
+	 
+  </head>
+    <body>
+      <header>
+       <a href="#" class="logo">logo</a>
+         <ul>
+		      <li><a href="index.html">Home</a></li>
+		      <li><a href="cAbout.html">About</a></li>
+		      <li><a href="cContact.html">Contact</a></li>
+		      <li><a class="current" href="cMores.html">Mores</a></li>
+		      <li><a href="cGallary.html">Gallary</a></li>
+		    </ul>
+      </header>
+      <section class="banner"></section>
+      <script type="text/javascript">
+       window.addEventListener("scroll",function(){
+         var header=document.querySelector("header");
+         header.classList.toggle("stciky",window.scrollY>0);
+       })
+    </body> 
+    </html>
